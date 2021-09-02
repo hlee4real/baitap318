@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+</head>
+<body>
+    <div class="wrap"> <!--đây là thẻ div cha, sẽ có 4 thẻ div con đấy là header, content, sidebar và footer -->
+        <div class="header">
+            <div class="logo">
+                Freetuts
+            </div>
+            <div class="nav">
+                <ul class="1st">
+                    <a href="#1"><li>Link 1</li></a>
+                    <a href="#2"><li>Link 2</li></a>
+                    <a href="#3"><li>Link 3</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1 id="1">CSS la gi</h1>
+            <p>"CSS là gì?" là câu hỏi muôn thuở của những bạn mới bắt đầu học CSS. Về định nghĩa thì nó không phức tạp lắm nhưng về cách sử dụng thì có lẽ là một chặng đường dài và đầy gian nan. Chính vì vậy mình muốn tạo một serie học CSS căn bản để các bạn có một nơi học chất lượng vã đặc biệt là miễn phí 100%. Trước tiên chúng ta sẽ tìm hiểu định nghĩa trước rồi sau đó tìm hiểu cách học nó nhé</p> <br>
+            <p>CSS là chữ viết tắt của cụm từ tiếng Anh "Cascading Style Sheet", dịch ra tiếng Việt thì thực sự mình cũng không thể dịch cho chuẩn được blush, nhưng về ý nghĩa thì CSS dùng để trình bày bổ cục của một Website dựa vào các thẻ HTML. Nói nôm na thì CSS sẽ tác động thay đổi cách hiển thị mặc định của các thẻ HTML nhằm thân thiện với người dùng hơn hay nhằm một mục đích cụ thể nào đó.</p> <br><br>
+            <p>Có một ví dụ trực quan để diễn tả nhiệm vụ của CSS như sau, giả sử bạn xây nhà và bạn sẽ sử dụng gạch để xây dựng ngôi nhà. Nhưng để trang trí cho ngôi nhà thì bạn sẽ sử dụng một số đồ nội thất khác như sơn màu, ... thì lúc này sơn màu sẽ tác động làm thay đổi color mặc định của gạch. Nói ví von thi màu sơn chính là CSS và gạch chính là HTML.
+
+                CSS đóng một vai trò rất quan trọng khi bạn xây dựng giao diện Website. Thông thường bạn sẽ  sử dụng một chương trình thiết kế như Photoshop để tạo giao diện, sau đó các Frontend Developer sẽ dựa vào file đó kết hợp với HTML & CSS để convert thanh một file có đuôi mở rộng là .html, file File này sẽ chứa code HTML và CSS.</p> <br><br>
+            <h1 id="2">Gom nhom cac the loai cua CSS</h1>
+            <p>CSS có nhiều kiểu nhưng gom lại thì chúng ta sẽ có các thể loại CSS thông dụng như sau:</p>
+            <ul>
+                <li><b>Background</b>: CSS tùy chỉnh hình nền</li>
+                <li><b>Text</b>: CSS tùy chỉnh cách hiển thị đoạn text</li>
+                <li><b>Font</b>: CSS tùy chỉnh kích thước, kiểu chữ</li>
+                <li><b>Link</b>: Link</li>
+                <li><b>List</b>: CSS tùy chỉnh danh sách</li>
+                <li><b>Table</b>: CSS tùy chỉnh bảng</li>
+                <li><b>Box model</b>: Mô hình box model kết hợp padding, margin, border</li>
+            </ul>
+            <h1 id="3">Hoc CSS nhu the nao cho hieu qua?</h1>
+            <p>Vấn đề học CSS như thế nào cho hiệu quả thì tùy thuộc vào kinh nghiệm của mỗi người nên nó không có một quy tắc chung, và mình cũng xin đưa ra một cách học để các bạn tham khảo như sau:</p>
+            <ul>
+                <li>Hãy đọc lý thuyết và thực hành thông qua các ví dụ cụ thể, sau khi xong thì hãy thực hành các bước tiếp theo</li>
+                <li>Tìm hiểu Box Model, hiểu nó thật vững (margin, padding, ...)</li>
+                <li>Tìm hiểu hai thuộc tính float, clear của CSS và kết hợp với các thẻ DIV để tạo layout đơn giản (header, sidebar left, sidebar right, footer, main content)</li>
+                <li>Tìm hiểu các xây dựng một menu đa cấp ngang và dọc (có thể search google)</li>
+                <li>Tìm hiểu thuộc tính POSITION trong CSS</li>
+                <li>Gom hết kiến thức và tạo một layout hoàn chỉnh</li>
+            </ul>
+            <p><b>Nguồn học CSS ở đâu?</b> Hiện nay trên mạng có rất nhiều Website học CSS online miễn phí như <a href="https://www.w3schools.com/css/">W3C</a>, lên trang Youtube để kiếm một số video miễn phí. Đặc biệt bạn nên lên các forum, diễn đàn lập trình như Facebook để trao đổi kiến thức.</p>
+        </div>
+        <div class="sidebar">
+            <ul style="text-align:left">
+                <a href="#1"><li>CSS la gi</li></a>
+                <a href="#2"><li>Gom nhom cac the loai cua CSS</li></a>
+                <a href="#3"><li>Hoc CSS the nao cho hieu qua</li></a> 
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="footer"><p>Copy right: 2021 - Le Huy Hoang</p></div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .logo{
+        font-size:25px;
+        float:left;
+    }
+    .nav{
+        float:right;
+    }
+    .nav ul{
+        text-align: center;
+        padding: 0px;
+        margin:0px;
+        list-style-type: none;
+    }
+    .nav li{
+        font-size: 18px;
+        line-height: none;
+        display:inline-block;
+        height:50px;
+    }
+    .sidebar a{
+        text-decoration: none;
+    }
+    .sidebar a:hover{
+        text-decoration: underline;
+        color:blue;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        width:980px;
+        margin: 0 auto;
+    }
+    a:hover{
+        background-color:grey;
+    }
+    .header{
+        padding-top:25px;
+        padding:20px;
+        height:30px;
+        background-color: aqua;
+        margin-bottom: 15px;
+    }
+    .content{
+        background-color:whitesmoke;
+        height:1500px;
+        width: 70%; /* cái này là để cho nó fit với mọi trường hợp */
+        float: right;
+    }
+    .sidebar{
+        height:1500px;
+        width: 29%; /* cái này là để cho nó fit với mọi trường hợp */
+        float:left;
+        padding:0;
+    }
+    .clear{
+        clear:both;
+    }
+    .footer{
+        text-align:center;
+        height: 40px;
+        margin-top:15px;
+        background-color: grey;
+    }
+    .footer p{
+        padding-top:15px;
+    }
+    .content h1{
+        color:red;
+    }
+    .content h1, p{
+        padding:15px;
+    }
+    .header{
+        font-size:20px;
+        background-color:aqua;
+        padding: 30px;
+        position: sticky;
+        top: 0;
+        position: -webkit-sticky;
+    }
+</style>
